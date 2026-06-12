@@ -1,2 +1,1 @@
-variable "peerings1" {}
-variable "peerings2" {}
+variable "peerings" {}
