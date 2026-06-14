@@ -7,7 +7,7 @@ vms = {
   admin_username      = "adminuser"
   admin_password =      "Ram@9090"
   disable_password_authentication = false
-  network_interface_ids = ["/subscriptions/bdb89ac3-e42b-4f59-993e-7dde7e60d4e0/resourceGroups/test-rg-01/providers/Microsoft.Network/networkInterfaces/test-nic-01"]
+  network_interface_ids = ["/subscriptions/bdb89ac3-e42b-4f59-993e-7dde7e60d4e0/resourceGroups/test-rg-01/providers/Microsoft.Network/networkInterfaces/test-nic-04"]
   
   os_disk = {
     caching              = "ReadWrite"
