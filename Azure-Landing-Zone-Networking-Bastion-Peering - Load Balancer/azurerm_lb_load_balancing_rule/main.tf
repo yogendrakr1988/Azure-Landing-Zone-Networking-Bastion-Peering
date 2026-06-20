@@ -1,7 +1,13 @@
 
-resource "azurerm_lb_backend_address_pool" "lbpoolb" {
-  for_each        = var.lbpoolb
-  loadbalancer_id = each.value.loadbalancer_id
-  name            = each.value.name
+resource "azurerm_lb_rule" "lbrule" {
+  for_each        = var.lbrule
+   loadbalancer_id                = each.value.loadbalancer_id
+  name                           = each.value.name
+  protocol                       = each.value.protocol
+  frontend_port                  = each.value.frontend_port
+  backend_port                   = each.value.backend_port
+  frontend_ip_configuration_name = each.value.frontend_ip_configuration_name
+backend_address_pool_ids = each.value.backend_address_pool_ids
+probe_id = each.value.probe_id
 }
 

@@ -1,2 +1,2 @@
 
-variable "lbrule" {}
+variable "hp" {}
